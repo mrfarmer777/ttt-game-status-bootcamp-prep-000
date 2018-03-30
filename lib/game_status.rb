@@ -45,4 +45,8 @@ def draw?(board)
   draw = (!won?(board)&&full?(board))
   draw
 end
-    
+
+def over?(board)
+  over = (draw?(board)||full?(board)||won?(board))
+  over
+end
