@@ -53,3 +53,5 @@ end
 
 def winner(board)
   ganador = board[win?(board)[0]]
+  ganador
+end
