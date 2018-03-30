@@ -37,6 +37,6 @@ end
 
 def full?(board)
   full = board.all? do |position|
-    !position==" "
+    (position=="O" || position=="X")
   end
 end
