@@ -24,6 +24,8 @@ def won?(board)
     if(all_full)
       if(board[combo[0]]==board[combo[1]] && board[combo[0]]==board[combo[2]])
         combo
+      else
+        nil
       end
     end
   end
@@ -53,5 +55,5 @@ end
 
 def winner(board)
   ganador = board[won?(board)[0]]
-  ganador
+  
 end
