@@ -40,3 +40,9 @@ def full?(board)
     (position=="O" || position=="X")
   end
 end
+
+def draw?(board)
+  draw = (!won?(board)&&full?(board))
+  draw
+end
+    
