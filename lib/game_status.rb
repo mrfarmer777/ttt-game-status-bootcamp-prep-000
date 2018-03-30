@@ -23,7 +23,7 @@ def won?(board)
     end
     if(all_full)
       if(board[combo[0]]==board[combo[1]] && board[combo[0]]==board[combo[2]])
-        combo      
+        combo
       end
     end
   end
@@ -52,6 +52,8 @@ def over?(board)
 end
 
 def winner(board)
-  ganador = board[won?(board)[0]]
-  ganador
+  if(won?(board).nil?)
+    nil
+  else
+    board[won?(board)[0]]
 end
