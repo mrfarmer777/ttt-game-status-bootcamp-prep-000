@@ -50,3 +50,6 @@ def over?(board)
   over = (draw?(board)||full?(board)||won?(board))
   over
 end
+
+def winner(board)
+  ganador = board[win?(board)[0]]
